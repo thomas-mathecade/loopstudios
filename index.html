@@ -22,8 +22,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+
+  <!-- Header -->
 <header>
   <a class="mainTitle" href="/"><h1>loopstudios</h1></a>
+    <!-- Navigation (header) -->
   <button id="openMenu" class="menuBtn">
     <img src="images/icon-hamburger.svg" alt="open menu button">
   </button>
@@ -34,22 +37,27 @@
     </button>
     <ul id="navbarListHeader"></ul>
   </nav>
+  <!-- ---------------------------- -->
   <h2 class="headerText">Immersive<br>experiences<br>that deliver</h2>
 </header>
 
+<!-- About Section -->
 <main>
   <section id="about">
-    <img class="aboutImage" src="images/image-interactive.jpg" alt="">
-    <div class="aboutContant">
-      <h2 class="aboutTitle">The leader in interactive VR</h2>
-      <p class="aboutText">Founded in 2011, Loopstudios has been producing world-class virtual reality 
-      projects for some of the best companies around the globe. Our award-winning 
-      creations have transformed businesses through digital experiences that bind 
-      to their brand.
-      </p>
+    <div class="aboutBox">
+      <img class="aboutImage" src="images/image-interactive.jpg" alt="">
+      <div class="aboutContant">
+        <h2 class="aboutTitle">The leader in interactive VR</h2>
+        <p class="aboutText">Founded in 2011, Loopstudios has been producing world-class virtual reality 
+        projects for some of the best companies around the globe. Our award-winning 
+        creations have transformed businesses through digital experiences that bind 
+        to their brand.
+        </p>
+      </div>
     </div>
   </section>
 
+<!-- OurCreation Section -->
   <section>
     <h2 class="creationTitle">Our creations</h2>
     <button class="creationBtn BtnUp">See all</button>
@@ -58,12 +66,15 @@
   </section>
 </main>
 
+<!-- Footer -->
 <footer>
   <div class="footerContantLeft">
     <h2 class="footerTitle">loopstudios</h2>
+    <!-- Navigation (footer) -->
     <nav class="footerNav">
       <ul id="navbarListFooter"></ul>
     </nav>
+    <!-- ---------------------------- -->
   </div>
 
   <div class="footerContantRight">
@@ -75,14 +86,11 @@
     </div>
     <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
   </div>
-
 </footer>
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
+<!-- ---------------------------- -->
 </body>
 <script>
+  // functions initialization
   ini();
   navbarContant();
   creationContant();

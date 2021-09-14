@@ -7,7 +7,7 @@ function ini() {
     }
 }
 
-// Add links in Navabar (same une header and footer)"
+// Add navigation link in "Navigation (header and footer)"
 function navbarContant() {
     const navbarArray = ['about', 'careers', 'events', 'products', 'support']
 
@@ -15,6 +15,7 @@ function navbarContant() {
         var link = `<a class="navbarLink" href="${navbarArray[i]}">${navbarArray[i]} <div class="linkLine"></div></a>`;
 
         var navbarLinkHeader = document.createElement("LI");
+        navbarLinkHeader.classList.add(`headerLink-${i}`);
         navbarLinkHeader.innerHTML = link;
         document.getElementById("navbarListHeader").appendChild(navbarLinkHeader);
 
@@ -25,7 +26,7 @@ function navbarContant() {
     }
 }
 
-// Add image and is title in div "ourCreation"
+// Add background image and is title in "OurCreation Section"
 function creationContant() {
     const creationArray = [
         ['image-deep-earth', 'Deep<br>earth'],
@@ -38,6 +39,7 @@ function creationContant() {
         ['image-fisheye', 'Make it<br>fisheye']
     ]
 
+    // Change background images path in function of window size
     var imagePath;
     if ($(window).width() < 375) {
         imagePath = "images/mobile"
@@ -57,7 +59,7 @@ function creationContant() {
     }
 }
 
-// Manages the menu position by pressing the buttons
+// Manages the menu position by pressing the buttons in "Navigation (header)"
 function openMenu() {
     var menu = document.getElementById('navigationBar');
 

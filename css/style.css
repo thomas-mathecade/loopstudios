@@ -30,8 +30,8 @@ a {
 
 .menuBtn {
     position: absolute;
-    top: 30px;
-    right: 20px;
+    top: 50px;
+    right: 10%;
     background-color: rgba(0, 0, 0, 0);
     border: none;
     cursor: pointer;
@@ -61,7 +61,7 @@ a {
 
 .navbar ul {
     position: relative;
-    left: 20px;
+    left: 10%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -135,13 +135,14 @@ section {
 .aboutText {
     margin-bottom: 60px;
     line-height: 1.75em;
+    color: hsl(0, 0%, 55%);
 }
 
 .aboutImage {
     width: 100%;
 }
 
-/* Creation */
+    /* Creation */
 #creation {
     margin-bottom: 90px;
 }
@@ -257,10 +258,12 @@ footer {
 }
 
 .copyright {
-    color: #808080;
+    color: hsl(0, 0%, 55%);
 }
 
+/* -----OTHER WINDOW SIZE----- */
 @media screen and (max-width: 992px) {
+    /* Navigation */
     #navbarListFooter li {
         padding-bottom: 15px;
     }
@@ -269,14 +272,20 @@ footer {
 @media screen and (min-width: 992px) {
     /* Main */
         /* About */
+    .aboutBox {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
     .aboutContant {
         position: absolute;
         display: block;
-        right: 10%;
-        bottom: -96%;
+        right: 0;
+        bottom: 0;
         background-color: #ffffff;
         padding: 90px 0 0 90px;
-        width: 40%;
+        width: 50%;
         margin: 0;
     }
 
@@ -293,7 +302,6 @@ footer {
     }
 
     /* Footer */   
-    
     footer {
         height: 35%!important;
     }
@@ -308,7 +316,6 @@ footer {
     }
 }
 
-/* Other Size */
 @media screen and (max-width: 768px) {
     /* Header */
     header {
@@ -347,7 +354,7 @@ footer {
         font-size: 6vw!important;
     }
 
-        /* Navigation */
+    /* Navigation */
     .navbar ul li a {
         text-transform: capitalize;
     }
@@ -388,16 +395,17 @@ footer {
     section {
         width: 80%;
     }
+
         /* About */
     #about {
-        margin-bottom: 260px;
+        margin-bottom: 190px;
     }
         
     .aboutTitle {
         font-size: 3.5vw;
     }
     
-    /* Creation */
+        /* Creation */
     .creationTitle {
         text-align: left;
         font-size: 3.5vw;
@@ -494,18 +502,3 @@ footer {
         margin-top: 350px;
     }
 }
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-/* Phones (extra small) :
-xs < 768px 
-
-Tablets (small) :    
-sm >= 768px 
-
-Descktop (medium) :
-md >= 992px
-
-Large descktop (large) :
-lg >= 1200px */
